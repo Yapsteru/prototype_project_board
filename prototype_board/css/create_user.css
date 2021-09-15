@@ -1,0 +1,228 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #003366;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.button-align{
+	height: 50px;
+}
+.first-modal{
+	width: 150px;
+	float: left;
+}
+.second-modal{
+	width: 150px;
+	float: left;
+}
+.first-modal button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9933cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.first-modal button:hover {background-color: #3F0071}
+
+.second-modal button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9933cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.second-modal button:hover {background-color: #3F0071}
+
+#tbody{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#tbody td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#tbody tr:nth-child(even){background-color: #f2f2f2;}
+
+#tbody tr:hover {background-color: #ddd;}
+
+#tbody th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #035397;
+  color: white;
+  text-align: center;
+}
+
+.form-body form {
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.form-body .input-group {
+    margin: 10px 0px 10px 0px;
+}
+.form-body .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.form-body .input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.form-body #user_type {
+    height: 40px;
+    width: 93%;
+    padding: 5px 10px;
+    background: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.form-body button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9933cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.form-body button:hover {background-color: #3F0071}
+
+.dropbtn {
+  background-color: #9933cc;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a button{
+  background-color: #003366;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #003366;}
